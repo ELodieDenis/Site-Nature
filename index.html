@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nature</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="/HTML/Toutes les actualités.html">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <div class="logo-accueil">
+                <img src="/images/Logo site.png" alt="Logo du site Internet">
+            </div>
+            <nav class="barre-nav">
+                <a href="#" class="accueil">Accueil</a>
+                <a href="#" class="projets">Projets</a>
+                <a href="#" class="nos-actions">Nos actions</a>
+                <a href="#" class="a-propos">A propos</a>
+            </nav>
+            <nav class="options-langues">
+                <a href="/HTML/Contacts.html" target="_blank">Contact</a>
+                <select name="selection-langue" id="selection-langue">
+                    <option value="fr">Fr</option>
+                    <option value="en">En</option>
+                </select>
+            </nav>
+        </div>
+        <div class="icone-menu">
+            <img src="/images/Icone menu.png" alt="Icône menu de navigation">
+        </div>
+    </header>
+
+    <main>
+        <div class="tout-slider">
+            <div class="slider">
+                <div class="chevrons">
+                    <button onclick="previous()" class="chevron-left"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);"><path d="M13.293 6.293 7.586 12l5.707 5.707 1.414-1.414L10.414 12l4.293-4.293z"></path></svg></button>
+                    <button onclick="next()" class="chevron-right"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);"><path d="M10.707 17.707 16.414 12l-5.707-5.707-1.414 1.414L13.586 12l-4.293 4.293z"></path></svg></button>
+                </div>
+                <div class="diaporama">
+                    <div class="photo">
+                        <div class="h1__photo">
+                            <h1>Le parc de Yosemite</h1>
+                        </div>
+                        <img src="/images/Parc national de Yosemite.png" alt="Parc de Yosemite">
+                    </div>
+                    <div class="photo">
+                        <img src="/images/Cascades d'Ouzoud.png" alt="Les cascades d'Ouzoud">
+                    </div>
+                    <div class="photo">
+                        <img src="/images/Glacier Perito Moreno.png" alt="Glacier Perito Moreno">
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+        <!-- <div class="h1-accueil" data-aos="fade-right" data-aos-duration="1000" data-aos-offset="200">
+            <h1>Protéger la Nature, <br>Préserver le Futur</h1>
+        </div> -->
+    
+        <!-- Articles actualités -->
+        <div class="articles-accueil">
+            <h2>Actualités</h2>
+            <div class="articles_actualites">
+                <a href="/HTML/Article 1.html" target="_blank" class="article1" data-aos="zoom-in" data-aos-delay="0">
+                        <img src="images/COP 16 - Feuille.jpg" alt="Image d'une feuille d'arbre">
+                        <h3>COP 16 - <br>L'avenir de la biodiversité</h3>
+                </a>
+                <a href="/HTML/Article 2.html" target="_blank" class="article2" data-aos="zoom-in" data-aos-delay="0">
+                    <img src="images/Eolienne en mer.jpg" alt="Image de plusieurs éoliennes en mer">
+                    <h3>Eolienne en mer - <br>Un danger pour la biodiversité</h3>
+                </a>
+                <a href="/HTML/Article 3.html" target="_blank" class="article3" data-aos="zoom-in" data-aos-delay="0">
+                    <img src="/images/Chardonneret.jpg" alt="Chardonneret élégant">
+                    <h3>Le retour du piégeage non sélectif</h3>
+                </a>
+            </div>
+            <div class="btn-actualites">
+                <button id="redirectButton">
+                    <a href="/HTML/Toutes les actualités.html" target="_blank" >Toutes les actualités</a>
+                </button>
+            </div>
+        </div>
+    </main>
+    
+
+    <footer>
+        <div class="footer">
+            <div class="logo-footer">
+                <img src="/images/Logo site.png" alt="Logo du site Internet">
+            </div>
+            <div class="adresse-footer">
+                <h4>Adresse</h4>
+                <p>xx rue xx <br>C Postale <br>Ville</p>
+            </div>
+            <div class="navigation-footer">
+                <h4>Navigation</h4>
+                <nav>
+                    <a href="Accueil">Accueil</a>
+                    <a href="Projets">Projets</a>
+                    <a href="Nos actions">Nos actions</a>
+                    <a href="A propos">A propos</a>
+                </nav>
+            </div>
+            <div class="rs-footer">
+                <h4>Réseaux sociaux</h4>
+                <div class="logos-rs">
+                    <img src="/images/Logo Linkedin.png" alt="Logo de Linkedin">
+                    <img src="/images/Logo facebook.png" alt="Logo de Facebook">
+                    <img src="/images/Logo Instagram.png" alt="Logo d'Instagram">
+                </div>
+                <div class="contact-rs">
+                    <h4>Contact</h4>
+                    <p>xx xx xx xx xx</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- GSAP - Animation-->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+
+    <!-- AOS - Animation au scroll -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        AOS.init();
+    </script>
+
+
+    <script src="/JavaScript/Toutes les actualités.js"></script>
+    <script src="script.js"></script> 
+    
+</body>
+
+</html>

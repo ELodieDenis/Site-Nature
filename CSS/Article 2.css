@@ -1,0 +1,155 @@
+/* COMMUN */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+/* BODY */
+.body-article2{
+    margin: 50px 50px 50px 50px;
+}
+
+.body-article2 .titre-article2{
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+
+.body-article2 .texte-article2 h2{
+    padding-left: 50px;
+    color: #8FB43A;
+}
+
+
+/* HEADER */
+/* Logo header */
+.logo-accueil{
+    display: flex;
+}
+
+.logo-accueil img{
+    height: 50px;
+    width: auto;
+    border-radius: 60px;
+}
+
+/* Header */
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(240, 240, 235);
+    position: static;
+    max-width: 100%;
+}
+
+.header a{
+    text-decoration: none;
+    color: black;
+    font-size: large;
+    font-weight: bold;
+}
+
+.header .logo-accueil img{
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+
+.header .barre-nav .accueil,
+.header .barre-nav .projets,
+.header .barre-nav .nos-actions{
+    padding-right: 100px;
+    margin-right: 100px;
+    border-right: 2px solid black;
+}
+
+.header .options-langues a{
+    padding-right: 60px;
+}
+
+.header .options-langues{
+    padding-right: 15px;
+}
+
+
+/* FOOTER */
+.footer{
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    max-width: 100%;
+    background-color: #4B5943;
+    padding-top: 20px;
+}
+
+/* Logo site sur footer */
+.logo-footer{
+    text-align: center;
+}
+
+.logo-footer img{
+    height: 120px;
+    width: auto;
+    justify-content: center;
+    border-radius: 60px;
+}
+
+/* Adresse footer */
+.adresse-footer h4{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+
+}
+
+.adresse-footer p{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+/* Navigation footer */
+.navigation-footer h4{
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.navigation-footer nav{
+    display: block;
+    text-align: center;
+
+}
+
+.navigation-footer a{
+    display: block;
+    text-decoration: none;
+    color: black;
+}
+
+/* Réseaux sociaux et contacts footer */
+.rs-footer h4,
+.rs-footer p{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+.rs-footer .logos-rs {
+    justify-content: center;
+    display: flex;
+    padding-bottom: 20px;
+}
+
+.rs-footer .logos-rs img{
+    width: 40px;
+    padding-right: 20px;
+}
